@@ -40,7 +40,7 @@ Install Commander JS via Node Package Manager
 ### Run:
 In order run, simply call via command line and pass in the following parameters:
 
-    create -d 888 -i "sintel.mp4"  -k 2 -w 120 -h 67 -t http://54.224.21.195/s
+    node vttbuilder create -d 888 -i "sintel.mp4"  -k 2 -w 120 -h 67 -t http://54.224.21.195/s
     
     
     -i --inputfile [value] - Name of the video file you are generating the manifest for

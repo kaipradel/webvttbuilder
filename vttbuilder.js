@@ -17,14 +17,14 @@ program
 	.command('create')
 	.description('Creates the vtt file')
 	.option('-i, --inputfile [value]', 'Video file name')
-    .option('-o, --outputfile [value]', 'Name of the output file')
-    .option('-d, --duration <n>', 'File duration in seconds', parseInt)
-    .option('-k, --keyframeinterval  <n>', 'Keyframe interval',parseInt,2)
-    .option('-w, --framewidth <n>', 'Width of the tile',parseInt,120)
-    .option('-h, --frameheight <n>', 'Height of the tile',parseInt,67)
-    .option('-h, --horizontaltiles <n>', 'Number of tiles per horizontal line',parseInt, 10)
-    .option('-v, --verticaltiles <n>', 'Number of tiles per vertical line', parseInt, 9)
-    .option('-t, --thumbnailprefix [value]', 'Name of the thumbnails file')
+	.option('-o, --outputfile [value]', 'Name of the output file')
+	.option('-d, --duration <n>', 'File duration in seconds', parseInt)
+	.option('-k, --keyframeinterval  <n>', 'Keyframe interval',parseInt,2)
+	.option('-w, --framewidth <n>', 'Width of the tile',parseInt,120)
+	.option('-h, --frameheight <n>', 'Height of the tile',parseInt,67)
+	.option('-r, --horizontaltiles <n>', 'Number of tiles per horizontal line',parseInt, 10)
+	.option('-v, --verticaltiles <n>', 'Number of tiles per vertical line', parseInt, 9)
+	.option('-t, --thumbnailprefix [value]', 'Name of the thumbnails file')
 	
 	.action(function(options){
 	
@@ -75,8 +75,7 @@ program
 			  xcounter = xcounter + 1;
 			 
 			}
-			//console.log(spritefileslist);
-
+			
 		  stream.end();
 		});
 		
